@@ -1,0 +1,26 @@
+<div class="container-fluid" *ngIf="county">
+  <div class="row">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">County Details</h3>
+      </div>
+      <div class="panel-body">
+        <form class="form-horizontal">
+          <fieldset class="form-group">
+            <label class="col-xs-2 control-label">ID</label>
+            <label class="col-xs-10 form-control-static">{{county.id}}</label>
+          </fieldset>
+          <fieldset class="form-group">
+            <label class="col-xs-2 control-label">Name</label>
+            <label class="col-xs-10 form-control-static">{{county.name}}</label>
+          </fieldset>
+          <fieldset class="form-group">
+            <label class="col-xs-2 control-label">Projects</label>
+            <label class="col-xs-10 form-control-static">{{county.projects}}</label>
+          </fieldset>
+        </form>
+        <button type="button" class="btn btn-block btn-primary" (click)="goBack()">Go Back</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "system",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "files": [
+    "typings/browser.d.ts",
+    "typings/browser/ambient/bootstrap/index.d.ts",
+    "typings/browser/ambient/es6-shim/index.d.ts",
+    "typings/browser/ambient/jasmine/index.d.ts",
+    "typings/browser/ambient/jquery/index.d.ts",
+    "app/app.component.ts",
+    "app/counties.component.ts",
+    "app/county-detail.component.ts",
+    "app/county-hover.service.ts",
+    "app/county.service.ts",
+    "app/county.ts",
+    "app/dashboard.component.ts",
+    "app/main.ts",
+    "app/map-color.pipe.ts",
+    "app/map.component.ts",
+    "app/mock-counties.ts",
+    "app/search-pipe.ts"
+  ]
+}

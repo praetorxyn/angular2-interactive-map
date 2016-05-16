@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Projects by County</h3>
+      </div>
+      <div class="panel-body">
+        <div class="col-md-6">
+          <svg-map [counties]="counties"></svg-map>
+          <div class="scale">
+            <div *ngFor="#n of scale" [ngStyle]="scaleColor(n)">
+              {{n}}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="county-list">
+            <div *ngFor="#county of counties | async" [class.active]="isActive(county)" (click)="gotoDetail(county)" (mouseover)="countyMouseOver(county.name)">
+              <div>{{county.name}}</div>
+              <div>{{county.projects}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

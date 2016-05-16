@@ -1,0 +1,14 @@
+@charset "UTF-8";
+svg .county {
+    stroke-width: 200;
+    stroke: #fff;
+
+    -webkit-transition: stroke 0.5s, stroke-width 0.5s;
+    -o-transition: stroke 0.5s, stroke-width 0.5s;
+    transition: stroke 0.5s, stroke-width 0.5s;
+}
+
+svg .county:hover, .county.active {
+    cursor: pointer;
+    fill: #ff0000;
+}
